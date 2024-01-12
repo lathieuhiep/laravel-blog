@@ -11,7 +11,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        echo 'index';
     }
 
     /**
@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        echo 'create';
     }
 
     /**
@@ -27,7 +27,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo 'store';
     }
 
     /**
@@ -35,7 +35,7 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        echo 'show';
     }
 
     /**
@@ -43,7 +43,7 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        echo 'edit';
     }
 
     /**
@@ -51,7 +51,7 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        echo 'update';
     }
 
     /**
@@ -59,6 +59,6 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        echo 'destroy';
     }
 }
