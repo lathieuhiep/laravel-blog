@@ -20,9 +20,9 @@ class PostFactory extends Factory
         return [
             'title' => fake()->name,
             'user_id' => 1,
-            'slug' => fake()->slug(8),
+            'slug' => fake()->slug(5),
             'content' => fake()->text,
-            'excerpt' => fake()->paragraph(),
+            'excerpt' => fake()->paragraph(2),
             'status' => 'publish'
         ];
     }

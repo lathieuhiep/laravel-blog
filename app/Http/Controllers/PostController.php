@@ -2,16 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\DTO\PostQuery;
+use App\Services\PostService;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    protected PostService $postService;
+
+    public function __construct(PostService $postService)
+    {
+        $this->postService = $postService;
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        echo 'index';
+        $query = new PostQuery(10);
+        $posts = $this->postService->getAllPostsPaginatedSorted($query);
+
+        dd($posts);
     }
 
     /**
