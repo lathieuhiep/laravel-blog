@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use App\DTO\PostQuery;
-use App\Services\PostService;
+use App\Http\Controllers\Controller;
+use App\Services\User\PostService;
 use Illuminate\Http\Request;
 
 class PostController extends Controller

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\User;
 
 use App\DTO\PostQuery;
-use App\Repositories\Post\PostRepositoryInterface;
+use App\Repositories\User\Post\PostRepositoryInterface;
 
 class PostService
 {

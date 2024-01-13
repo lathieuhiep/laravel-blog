@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Post;
+namespace App\Repositories\User\Post;
 
 use App\DTO\PostQuery;
 use App\Repositories\BaseRepositoryInterface;

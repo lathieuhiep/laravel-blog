@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\User\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require __DIR__.'/admin.php';
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource('posts', PostController::class);
+require __DIR__.'/user.php';
