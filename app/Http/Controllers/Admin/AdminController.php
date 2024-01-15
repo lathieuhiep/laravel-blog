@@ -23,6 +23,6 @@ class AdminController extends Controller
             return redirect()->route('admin.dashboard')->with('error', 'Email hoặc mật khẩu không đúng');
         }
 
-        return redirect()->route('admin.login')->with('error', 'Email hoặc mật khẩu không đúng');
+        return redirect()->route('admin.show-login-form')->with('message', 'Email hoặc mật khẩu không đúng');
     }
 }

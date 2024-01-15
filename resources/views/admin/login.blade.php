@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Admin Login</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,7 @@
 
 <div class="sign-in">
     <h2 class="heading">SIGN IN</h2>
-    @if(session('error'))
-        <p class="error">{{ session('error') }}</p>
-    @endif
+    <p class="error">{{ session('message') }}</p>
 
     <form method="POST" action="{{ route('admin.login') }}">
         @csrf
@@ -37,8 +36,6 @@
             <button type="submit" class="btn btn-submit">Login</button>
         </div>
     </form>
-
-    @php var_dump(session('error')) @endphp
 </div>
 
 </body>
