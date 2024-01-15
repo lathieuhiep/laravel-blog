@@ -1,0 +1,84 @@
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: #000;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.sign-in {
+  width: 40rem;
+  padding: 3rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 1.5rem 3.5rem rgb(0, 0, 0);
+  background: #222;
+}
+.sign-in .heading {
+  margin-bottom: 1.6rem;
+  font-size: 3.2rem;
+  text-align: center;
+}
+.sign-in .group-control ~ .group-control {
+  margin-top: 1.6rem;
+}
+.sign-in .form-control {
+  padding: 1.2rem;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  background-color: #333;
+}
+.sign-in .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.sign-in .form-control::placeholder {
+  color: #ffffff;
+}
+.sign-in .link {
+  display: inline-block;
+  margin-top: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.sign-in .link:hover {
+  color: #07ad90;
+}
+.sign-in .btn-submit {
+  width: 100%;
+  padding: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+.sign-in .btn-submit:hover {
+  color: #ffffff;
+  background-color: #07ad90;
+}
