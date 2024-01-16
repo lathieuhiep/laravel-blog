@@ -1,11 +1,21 @@
 // webpack.mix.js
 const mix = require('laravel-mix');
+const CleanCssPlugin = require('clean-css-cli');
+const TerserPlugin = require('terser-webpack-plugin');
 
 // admin
-mix.sass('resources/sass/admin/login-form.scss', 'public/assets/admin/css');
-
+mix.js('resources/assets/admin/js/main.js', 'public/assets/admin/js/')
+    .sass('resources/assets/admin/scss/main.scss', 'public/assets/admin/css');
 
 // config global
-mix.version()
-    .browserSync('127.0.0.1:8000')
+mix.options({
+    hideModules: false,
+    license: false
+}).version()
+    .browserSync({
+        proxy: '127.0.0.1:8000',
+        open: false,
+        cors: true,
+        ghostMode: false
+    })
     .disableNotifications();
