@@ -9,10 +9,9 @@ Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
 
-//    Route::get('/login', [AdminController::class, 'showLoginForm'])->name('show-login-form');
-//    Route::post('/login-admin', [AdminController::class, 'login'])->name('login');
-//
-//    Route::middleware(['admin'])->group(function (){
-//        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-//    });
+    Route::middleware(['admin', 'checkAdmin'])->group(function () {
+        Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    });
 });

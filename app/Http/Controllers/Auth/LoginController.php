@@ -51,12 +51,27 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
-            // Xử lý khi đăng nhập thành công
-            return redirect()->intended('/dashboard');
+            // Logged in successfully
+            return redirect()->intended(route('admin.dashboard'));
         }
 
-        throw ValidationException::withMessages([
-            'email' => [__('validation.custom.email.email')],
-        ]);
+        // Login failed
+        return redirect()->route('admin.login')->with('error', 'Email hoặc mật khẩu không chính xác');
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return $this->loggedOut($request) ?: redirect(route('admin.login'));
+    }
+
+    // ...
+
+    protected function guard()
+    {
+        return Auth::guard();
     }
 }

@@ -1,5 +1,13 @@
 {
-    "/assets/admin/js/main.js": "/assets/admin/js/main.js?id=10aa704993f095c596cf16de54197074",
-    "/assets/admin/css/login-form.css": "/assets/admin/css/login-form.css?id=4d6a5de65dc1b6bd073f66555bd5b992",
-    "/assets/admin/css/main.css": "/assets/admin/css/main.css?id=f706dd58d02ca339c7b251cb5a023f45"
+    "/assets/admin/js/dashboard.js": "/assets/admin/js/dashboard.js?id=b7b1da0cbe46b3640c77387173e301ed",
+    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css?id=17cc22a1c3b105e5298384a29fccc096",
+    "/assets/admin/css/login-form.css": "/assets/admin/css/login-form.css?id=98fa15e398a8038400e3c4193889bf47",
+    "/assets/admin/css/dashboard.css": "/assets/admin/css/dashboard.css?id=c3534ac00e8e9e909ea8af2b943e75cc",
+    "/assets/libs/fontawesome/css/fontawesome.css": "/assets/libs/fontawesome/css/fontawesome.css?id=9c42741e29117a2c9eba879f44aed2aa",
+    "/assets/libs/fontawesome/webfonts/fa-brands-400.ttf": "/assets/libs/fontawesome/webfonts/fa-brands-400.ttf?id=69e5d8e4e818f05fd882cceb758d1eba",
+    "/assets/libs/fontawesome/webfonts/fa-brands-400.woff2": "/assets/libs/fontawesome/webfonts/fa-brands-400.woff2?id=189b85e9c72c6f75e464c3f58a6707cf",
+    "/assets/libs/fontawesome/webfonts/fa-regular-400.ttf": "/assets/libs/fontawesome/webfonts/fa-regular-400.ttf?id=ed4c23399d1013809882e90bfe396d1b",
+    "/assets/libs/fontawesome/webfonts/fa-regular-400.woff2": "/assets/libs/fontawesome/webfonts/fa-regular-400.woff2?id=be75b1958ae0da55e1eed562d9b7713d",
+    "/assets/libs/fontawesome/webfonts/fa-solid-900.ttf": "/assets/libs/fontawesome/webfonts/fa-solid-900.ttf?id=dfdc7801582dd0d20ea75faa3b96c296",
+    "/assets/libs/fontawesome/webfonts/fa-solid-900.woff2": "/assets/libs/fontawesome/webfonts/fa-solid-900.woff2?id=a0feb384c3c6071947a49708f2b0bc85"
 }

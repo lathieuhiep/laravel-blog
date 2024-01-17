@@ -1,16 +1,52 @@
 @import '../../variables-site/variables';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-font-family: 'Noto Serif', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    background-color: #080710;
+}
+
 .sign-in {
     width: 40rem;
     padding: 3rem;
-    border-radius: .4rem;
-    box-shadow: 0 1.5rem 3.5rem rgba(0,0,0,9);
-    background: #222;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 4rem rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.12);
 
     .heading {
         margin-bottom: 1.6rem;
-        font-size: 3.2rem;
+        font-size: 3rem;
         text-align: center;
+        text-transform: uppercase;
+    }
+
+    .error {
+        margin-bottom: 1rem;
+        color: #FF0000FF;
+        font-weight: 700;
     }
 
     .group-control {
@@ -23,8 +59,11 @@
         padding: 1.2rem;
         width: 100%;
         color: #ffffff;
+        font-size: inherit;
+        font-family: inherit;
         border: none;
-        background-color: #333;
+        border-radius: .4rem;
+        background-color: rgba(255,255,255,0.07);
 
         &::-ms-input-placeholder {
             color: #ffffff;
@@ -32,6 +71,10 @@
 
         &::placeholder {
             color: #ffffff;
+        }
+
+        &:focus-visible {
+            outline: none;
         }
     }
 
@@ -54,6 +97,8 @@
         cursor: pointer;
         border: none;
         font-weight: 700;
+        font-size: inherit;
+        font-family: inherit;
         background-color: #fff;
         @include transition();
 

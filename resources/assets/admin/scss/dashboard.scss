@@ -1,0 +1,17 @@
+@import '../../variables-site/variables';
+
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.navbar-brand,
+.form-control,
+.dropdown-menu,
+.btn {
+    font-size: inherit;
+}

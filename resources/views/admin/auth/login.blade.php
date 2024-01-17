@@ -12,6 +12,12 @@
     <div class="sign-in">
         <h2 class="heading">{{ __('Đăng nhập') }}</h2>
 
+        @if(session('error'))
+            <div class="error">
+                {{ session('error') }}
+            </div>
+        @endif
+
         <form method="POST" action="{{ route('admin.login') }}">
             @csrf
 

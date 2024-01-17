@@ -15,7 +15,6 @@
         "@popperjs/core": "^2.11.6",
         "bootstrap": "^5.2.3",
         "browser-sync-webpack-plugin": "^2.3.0",
-        "clean-css-cli": "^5.6.3",
         "clean-css-loader": "^4.2.1",
         "cross-env": "^7.0.3",
         "laravel-mix": "^6.0.49",
@@ -23,10 +22,10 @@
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.56.1",
         "sass-loader": "^12.1.0",
-        "terser-webpack-plugin": "^5.3.10",
         "webpack-cli": "^5.1.4"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.5.1",
         "browser-sync": "^2.29.3"
     }
 }
