@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Admin Dashboard')
+@section('title', 'Dashboard')
 
 @section('content')
     <h1 class="mt-4">Dashboard</h1>

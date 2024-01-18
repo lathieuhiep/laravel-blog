@@ -9,9 +9,70 @@ body {
     font-size: 1.6rem;
 }
 
+a {
+    text-decoration: unset;
+}
+
+.error {
+    color: #ff0000;
+}
+
 .navbar-brand,
 .form-control,
 .dropdown-menu,
 .btn {
     font-size: inherit;
+}
+
+.sb-sidenav {
+    .sb-sidenav-menu {
+        .nav {
+            .nav-link {
+                .sb-nav-link-icon {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.datatable-wrapper {
+    font-size: 1.6rem;
+
+    .datatable-container {
+        border-top: 1px solid #d9d9d9;
+    }
+
+    .datatable-table {
+        margin: 0;
+    }
+
+    .datatable-input,
+    .datatable-selector {
+        font-size: inherit;
+    }
+
+    .datatable-top {
+        margin-bottom: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+
+        &:after {
+            display: none;
+        }
+
+        .datatable-selector {
+            width: 10rem;
+        }
+    }
+
+    table {
+        th, tr {
+            font-size: 1.6rem;
+        }
+
+        tr {
+            border-width: 1px;
+        }
+    }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Admin Dashboard')</title>
+    <title>Admin @yield('title', 'Dashboard')</title>
 
     <!-- css fontawesome -->
     <link rel="stylesheet" href="{{ asset('assets/libs/fontawesome/css/fontawesome.css') }}">
@@ -14,7 +14,7 @@
     <!-- add css -->
     @stack('css')
 </head>
-<body class="sb-nav-fixed">
+<body class="sb-nav-fixed @yield('bodyClass', '')">
 <!-- Header -->
 @include('admin.layouts.header')
 

@@ -1,0 +1,15 @@
+.form-user {
+    .item-control {
+        ~ .item-control {
+            margin-top: 1.6rem;
+        }
+
+        .form-label {
+            font-weight: 500;
+
+            .required {
+                color: #ff0000;
+            }
+        }
+    }
+}

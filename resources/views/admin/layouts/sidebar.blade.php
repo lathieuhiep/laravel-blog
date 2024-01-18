@@ -55,9 +55,12 @@
                     Charts
                 </a>
 
-                <a class="nav-link" href="tables.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Tables
+                <a class="nav-link" href="{{ route('admin.user.index') }}">
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    Users
                 </a>
             </div>
         </div>

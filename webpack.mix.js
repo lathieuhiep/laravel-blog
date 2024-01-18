@@ -26,6 +26,10 @@ mix.js('resources/assets/admin/js/dashboard.js', 'public/assets/admin/js/')
 // login page
 mix.sass('resources/assets/admin/scss/login-form.scss', 'public/assets/admin/css/');
 
+// user page
+mix.js('resources/assets/admin/js/user.js', 'public/assets/admin/js/')
+    .sass('resources/assets/admin/scss/tpl-users.scss', 'public/assets/admin/css/');
+
 //
 
 // config global
