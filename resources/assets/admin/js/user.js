@@ -1,3 +1,3 @@
 window.addEventListener('DOMContentLoaded', event => {
-    const myTable = new simpleDatatables.DataTable('#table-users', {});
+    const myTable = new simpleDatatables.DataTable('#table-users', {})
 })

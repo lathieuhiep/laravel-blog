@@ -18,9 +18,15 @@ class BaseRepository implements BaseRepositoryInterface
         return $this->model->all();
     }
 
-    public function find($id)
+    public function find($id, array $with = [])
     {
-        return $this->model->find($id);
+        $query = $this->model;
+
+        if ( !empty( $with ) ) {
+            $query = $query->with($with);
+        }
+
+        return $query->find($id);
     }
 
     public function create(array $data)

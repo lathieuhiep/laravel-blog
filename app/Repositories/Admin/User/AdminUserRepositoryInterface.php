@@ -8,4 +8,5 @@ interface AdminUserRepositoryInterface extends BaseRepositoryInterface
 {
     public function getAllPaginated();
     public function createUser($request);
+    public function updateUser($request, int $id);
 }

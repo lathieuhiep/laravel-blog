@@ -1,8 +1,9 @@
+
 <div id="layoutSidenav_nav">
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <a class="nav-link" href="{{ route('admin.dashboard') }}">
+                <a class="nav-link {{ isActiveMenu('admin/dashboard') }}" href="{{ route('admin.dashboard') }}">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
@@ -55,11 +56,10 @@
                     Charts
                 </a>
 
-                <a class="nav-link" href="{{ route('admin.user.index') }}">
+                <a class="nav-link {{ isActiveMenu('admin/user') }}" href="{{ route('admin.user.index') }}">
                     <div class="sb-nav-link-icon">
                         <i class="fas fa-user"></i>
                     </div>
-
                     Users
                 </a>
             </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 use App\Models\Role;
 use App\Services\Admin\AdminUserService;
 use Illuminate\Http\Request;
@@ -55,15 +56,28 @@ class AdminUserController extends Controller
      */
     public function edit(string $id)
     {
-        echo 'edit';
+        $roles = Role::all();
+        $user = $this->adminUserService->getUserAdmin($id, ['userRole']);
+
+        return view('admin.user.edit', [
+            'id' => $id,
+            'roles' => $roles,
+            'user' => $user
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateUserRequest $request, int $id)
     {
-        echo 'update';
+        $result = $this->adminUserService->updateUserAdmin($request, $id);
+
+        if ( $result ) {
+            return redirect()->route('admin.user.index');
+        } else {
+            return redirect()->back()->with('errors', 'Có lỗi xảy ra. Vui lòng thử lại.');
+        }
     }
 
     /**

@@ -17,7 +17,6 @@
         </p>
     @endif
 
-
     <form class="form-user mt-5" method="POST" action="{{ route('admin.user.store') }}">
         @csrf
         @include('admin.user.form')

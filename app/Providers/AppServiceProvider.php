@@ -8,6 +8,8 @@ use App\Repositories\User\Post\PostRepository;
 use App\Repositories\User\Post\PostRepositoryInterface;
 use App\Services\Admin\AdminUserService;
 use App\Services\User\PostService;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -40,7 +42,5 @@ class AppServiceProvider extends ServiceProvider
      * Bootstrap any application services.
      */
     public function boot(): void
-    {
-        //
-    }
+    {}
 }

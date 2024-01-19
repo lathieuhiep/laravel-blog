@@ -23,6 +23,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
+            <th>Edit</th>
         </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->roles->count() > 0 ? $user->roles[0]->name : '' }}</td>
+                <td><a class="btn btn-edit p-0" href="{{ route('admin.user.edit', ['user' => $user->id]) }}">Edit</a></td>
             </tr>
         @endforeach
         </tbody>

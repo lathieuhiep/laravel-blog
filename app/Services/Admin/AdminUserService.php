@@ -22,4 +22,14 @@ class AdminUserService
     {
         return $this->userRepository->createUser($request);
     }
+
+    public function getUserAdmin($id, array $with = [])
+    {
+        return $this->userRepository->find($id, $with);
+    }
+
+    public function updateUserAdmin($request, $id)
+    {
+        return $this->userRepository->updateUser($request, $id);
+    }
 }

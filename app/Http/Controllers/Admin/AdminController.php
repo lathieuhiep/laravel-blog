@@ -18,9 +18,10 @@ class AdminController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
+        $remember = $request->has('remember');
 
-        if (Auth::attempt($credentials)) {
-            return redirect()->route('admin.dashboard')->with('error', 'Email hoặc mật khẩu không đúng');
+        if ( Auth::attempt($credentials, $remember) ) {
+            return redirect()->route('admin.dashboard');
         }
 
         return redirect()->route('admin.show-login-form')->with('message', 'Email hoặc mật khẩu không đúng');
